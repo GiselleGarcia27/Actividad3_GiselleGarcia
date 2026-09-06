@@ -1,0 +1,313 @@
+/*
+Diseño visual de NUMOKA.
+La inteligencia artificial se utilizó como apoyo para proponer ideas
+de diseño y estilos. El código fue revisado, comprendido y ajustado
+para adaptarlo al proyecto y a la identidad visual de NUMOKA.
+*/
+
+/* Configuración general */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F5EFE6;
+    color: #4A3428;
+    line-height: 1.6;
+}
+
+/* Encabezado principal */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #F5EFE6;
+}
+
+header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 42px;
+    letter-spacing: 5px;
+    color: #4A3428;
+}
+
+header p {
+    margin: 4px 0;
+    font-size: 17px;
+}
+
+/* Menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 14px 80px;
+    background-color: #4A3428;
+}
+
+nav a {
+    color: #F5EFE6;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #D8C3A5;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Secciones generales */
+section {
+    padding: 30px;
+    margin: 0;
+}
+
+section h2 {
+    margin: 0 0 10px;
+    font-size: 32px;
+    color: #4A3428;
+}
+
+section p {
+    margin: 0 0 14px;
+    font-size: 17px;
+}
+
+/* Sección de inicio */
+section#inicio {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+section#inicio h2 {
+    font-size: 38px;
+}
+
+/* Sección Nosotros */
+section#nosotros {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+section#nosotros img {
+    display: block;
+    width: 720px;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 15px auto 0;
+    border-radius: 14px;
+}
+
+/* Sección del menú */
+section#menu {
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+section#menu > p {
+    max-width: 850px;
+}
+
+/* Imagen del menú */
+section#menu img {
+    display: block;
+    width: 430px;
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    margin: 20px auto 25px;
+    border-radius: 14px;
+}
+
+/* Categorías del menú */
+section#menu h3 {
+    margin: 25px 0 10px;
+    font-size: 20px;
+    color: #66735C;
+}
+
+/* Listas del menú */
+section#menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section#menu li {
+    background-color: #E2CFB3;
+    padding: 13px 18px;
+    border-radius: 9px;
+    font-size: 16px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+section#menu li:hover {
+    transform: translateY(-2px);
+    background-color: #D8C3A5;
+}
+
+/* Sección de experiencia */
+section#experiencia {
+    margin: 10px 0;
+    padding: 30px;
+    background-color: #E8DED0;
+    border-radius: 16px;
+}
+
+section#experiencia h2 {
+    font-size: 32px;
+}
+
+section#experiencia p {
+    max-width: 850px;
+}
+
+section#experiencia a {
+    display: block;
+    width: fit-content;
+    margin: 7px 0;
+    color: #4A3428;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section#experiencia a:hover {
+    color: #66735C;
+}
+
+/* Sección de contacto */
+section#contacto {
+    text-align: center;
+    padding: 40px 30px;
+}
+
+section#contacto h2 {
+    font-size: 34px;
+}
+
+section#contacto > p {
+    margin-bottom: 20px;
+}
+
+section#contacto form {
+    max-width: 650px;
+    margin: 20px auto 0;
+    padding: 25px;
+    background-color: #FFFDF9;
+    border-radius: 14px;
+    text-align: left;
+    box-shadow: 0 3px 12px rgba(74, 52, 40, 0.08);
+}
+
+section#contacto label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+section#contacto input,
+section#contacto textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #D8C3A5;
+    border-radius: 8px;
+    background-color: #F5EFE6;
+    color: #4A3428;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+section#contacto input:focus,
+section#contacto textarea:focus {
+    outline: 2px solid #D8C3A5;
+}
+
+section#contacto textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+section#contacto button {
+    display: block;
+    margin: 4px auto 0;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4A3428;
+    color: #F5EFE6;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+section#contacto button:hover {
+    background-color: #66735C;
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4A3428;
+    color: #F5EFE6;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    nav {
+        gap: 15px;
+        padding: 14px 20px;
+        flex-wrap: wrap;
+    }
+
+    section {
+        padding: 25px 20px;
+    }
+
+    section#menu ul {
+        grid-template-columns: 1fr;
+    }
+
+    section#experiencia {
+        margin: 10px 0;
+        padding: 25px 20px;
+    }
+
+    section#contacto form {
+        padding: 20px;
+    }
+}
