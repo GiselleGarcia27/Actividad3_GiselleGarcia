@@ -29,132 +29,153 @@
     <!-- Contenido principal del sitio -->
     <main>
 
-        <!-- Sección de bienvenida -->
-        <section id="inicio">
-            <h2>Bienvenido a NUMOKA</h2>
+        <div class="contenido-principal">
+
+            <!-- Sección de bienvenida -->
+            <section id="inicio">
+                <h2>Bienvenido a NUMOKA</h2>
+                <p>
+                    Un espacio creado para disfrutar de una buena bebida,
+                    algo delicioso y momentos especiales.
+                </p>
+            </section>
+
+            <!-- Sección sobre la cafetería -->
+            <section id="nosotros">
+                <h2>Conoce NUMOKA</h2>
+                <p>
+                    NUMOKA es una cafetería que busca crear una experiencia
+                    cálida y relajada para compartir, estudiar o simplemente
+                    disfrutar el momento.
+                </p>
+                <img src="img/cafeteria.jpg" alt="Interior de la cafetería" width="600" height="350">
+            </section>
+
+            <!-- Sección del menú -->
+            <section id="menu">
+                <h2>Nuestro menú</h2>
+                <p>
+                    En NUMOKA preparamos bebidas y alimentos pensados para acompañar
+                    cada momento del día. Desde un café para comenzar la mañana hasta
+                    algo dulce para disfrutar por la tarde.
+                </p>
+
+                <img src="img/cafe.jpg" alt="Café con leche y croissant" width="350" height="300">
+
+                <!-- Categoría de bebidas calientes -->
+                <h3>Bebidas calientes</h3>
+                <ul>
+                    <li>Espresso — $45</li>
+                    <li>Americano — $50</li>
+                    <li>Cappuccino — $65</li>
+                    <li>Latte de vainilla — $70</li>
+                    <li>Mocha — $75</li>
+                </ul>
+
+                <!-- Categoría de bebidas frías -->
+                <h3>Bebidas frías</h3>
+                <ul>
+                    <li>Cold Brew — $65</li>
+                    <li>Latte frío de vainilla — $70</li>
+                    <li>Chocolate frío — $65</li>
+                    <li>Matcha latte frío — $75</li>
+                </ul>
+
+                <!-- Categoría de alimentos y postres -->
+                <h3>Alimentos y postres</h3>
+                <ul>
+                    <li>Croissant de mantequilla — $55</li>
+                    <li>Pan de chocolate — $60</li>
+                    <li>Cheesecake de frutos rojos — $80</li>
+                    <li>Brownie de chocolate — $65</li>
+                    <li>Galleta de chispas de chocolate — $45</li>
+                </ul>
+            </section>
+
+            <!-- Sección sobre la experiencia de NUMOKA -->
+            <section id="experiencia">
+                <h2>Nuestra experiencia</h2>
+                <p>
+                    En NUMOKA queremos que cada visita sea un momento para disfrutar
+                    una buena bebida, probar algo delicioso y desconectarse de la rutina.
+                </p>
+                <p>
+                    Nuestro espacio está pensado para estudiar, trabajar, conversar
+                    con amigos o simplemente disfrutar de un momento tranquilo.
+                </p>
+
+                <!-- Enlaces externos sobre el café -->
+                <p>
+                    Conoce más sobre la historia y el origen del café:
+                </p>
+
+                <a href="https://www.lavazzausa.com/es/recipes-and-coffee-hacks/historia-de-los-origenes-del-cafe-hasta-la-actualidad" target="_blank" rel="noopener noreferrer">
+                    Historia del café - Lavazza
+                </a>
+                <br>
+
+                <a href="https://cafeselcriollo.com/articulos/origen-del-cafe-en-el-mundo/" target="_blank" rel="noopener noreferrer">
+                    Origen del café en el mundo - Café El Criollo
+                </a>
+                <br>
+
+                <a href="https://www.nescafe.com/mx/cultura-cafe/conocimiento/coffee-origins" target="_blank" rel="noopener noreferrer">
+                    Origen del café - NESCAFÉ
+                </a>
+                <br>
+
+
+
+            </section>
+
+            <!-- Sección de contacto -->
+            <section id="contacto">
+                <h2>Contáctanos</h2>
+                <p>
+                    ¿Tienes alguna pregunta o quieres conocer más sobre NUMOKA?
+                    Escríbenos.
+                </p>
+
+                <!-- Formulario de contacto -->
+                <form>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <br>
+                    <br>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <br>
+                    <br>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                    
+                    <br>
+                    <br>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+
+        </div>
+
+        <!-- Barra lateral con información adicional -->
+        <aside class="barra-lateral">
+            <h2>¿Por qué NUMOKA?</h2>
+
             <p>
-                Un espacio creado para disfrutar de una buena bebida,
-                algo delicioso y momentos especiales.
-            </p>
-        </section>
-
-        <!-- Sección sobre la cafetería -->
-        <section id="nosotros">
-            <h2>Conoce NUMOKA</h2>
-            <p>
-                NUMOKA es una cafetería que busca crear una experiencia
-                cálida y relajada para compartir, estudiar o simplemente
-                disfrutar el momento.
-            </p>
-            <img src="img/cafeteria.jpg" alt="Interior de la cafetería" width="600" height="350">
-        </section>
-
-        <!-- Sección del menú -->
-        <section id="menu">
-            <h2>Nuestro menú</h2>
-            <p>
-                En NUMOKA preparamos bebidas y alimentos pensados para acompañar
-                cada momento del día. Desde un café para comenzar la mañana hasta
-                algo dulce para disfrutar por la tarde.
+                Un espacio pensado para disfrutar un buen café,
+                relajarse y compartir momentos especiales.
             </p>
 
-            <img src="img/cafe.jpg" alt="Café con leche y croissant" width="350" height="300">
-
-            <!-- Categoría de bebidas calientes -->
-            <h3>Bebidas calientes</h3>
             <ul>
-                <li>Espresso — $45</li>
-                <li>Americano — $50</li>
-                <li>Cappuccino — $65</li>
-                <li>Latte de vainilla — $70</li>
-                <li>Mocha — $75</li>
+                <li>Ambiente tranquilo</li>
+                <li>Espacio para estudiar y trabajar</li>
+                <li>Bebidas y alimentos variados</li>
+                <li>Un lugar para compartir</li>
             </ul>
-
-            <!-- Categoría de bebidas frías -->
-            <h3>Bebidas frías</h3>
-            <ul>
-                <li>Cold Brew — $65</li>
-                <li>Latte frío de vainilla — $70</li>
-                <li>Chocolate frío — $65</li>
-                <li>Matcha latte frío — $75</li>
-            </ul>
-
-            <!-- Categoría de alimentos y postres -->
-            <h3>Alimentos y postres</h3>
-            <ul>
-                <li>Croissant de mantequilla — $55</li>
-                <li>Pan de chocolate — $60</li>
-                <li>Cheesecake de frutos rojos — $80</li>
-                <li>Brownie de chocolate — $65</li>
-                <li>Galleta de chispas de chocolate — $45</li>
-            </ul>
-        </section>
-
-        <!-- Sección sobre la experiencia de NUMOKA -->
-        <section id="experiencia">
-            <h2>Nuestra experiencia</h2>
-            <p>
-                En NUMOKA queremos que cada visita sea un momento para disfrutar
-                una buena bebida, probar algo delicioso y desconectarse de la rutina.
-            </p>
-            <p>
-                Nuestro espacio está pensado para estudiar, trabajar, conversar
-                con amigos o simplemente disfrutar de un momento tranquilo.
-            </p>
-
-            <!-- Enlaces externos sobre el café -->
-            <p>
-                Conoce más sobre la historia y el origen del café:
-            </p>
-
-            <a href="https://www.lavazzausa.com/es/recipes-and-coffee-hacks/historia-de-los-origenes-del-cafe-hasta-la-actualidad" target="_blank" rel="noopener noreferrer">
-                Historia del café - Lavazza
-            </a>
-            <br>
-
-            <a href="https://cafeselcriollo.com/articulos/origen-del-cafe-en-el-mundo/" target="_blank" rel="noopener noreferrer">
-                Origen del café en el mundo - Café El Criollo
-            </a>
-            <br>
-
-            <a href="https://www.nescafe.com/mx/cultura-cafe/conocimiento/coffee-origins" target="_blank" rel="noopener noreferrer">
-                Origen del café - NESCAFÉ
-            </a>
-            <br>
-
-
-
-        </section>
-
-        <!-- Sección de contacto -->
-        <section id="contacto">
-            <h2>Contáctanos</h2>
-            <p>
-                ¿Tienes alguna pregunta o quieres conocer más sobre NUMOKA?
-                Escríbenos.
-            </p>
-
-            <!-- Formulario de contacto -->
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                <br>
-                <br>
-
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" name="correo" required>
-                <br>
-                <br>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                <br>
-                <br>
-
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </section>
+        </aside>
 
     </main>
 
