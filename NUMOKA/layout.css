@@ -1,0 +1,266 @@
+/* Estilos generales de la página */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F5EFE6;
+    color: #4A3428;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+
+/* Estilos del encabezado */
+
+header {
+    background-color: #E8DCCB;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+header h1 {
+    color: #4A3428;
+    font-family: Georgia, serif;
+    font-size: 52px;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+
+/* Estilos del menú de navegación */
+
+nav {
+    background-color: #4A3428;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: #F5EFE6;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0 60px;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+
+/* Efecto al pasar el cursor sobre los enlaces */
+
+nav a:hover {
+    background-color: #D8C3A5;
+    color: #4A3428;
+}
+
+
+/* Organización del contenido principal */
+
+main {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    align-items: flex-start;
+}
+
+.contenido-principal {
+    flex: 1;
+}
+
+
+/* Estilos de las secciones principales */
+
+section {
+    background-color: #FFFDF9;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #D8C3A5;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #4A3428;
+    font-size: 28px;
+}
+
+section h3 {
+    color: #66735C;
+    font-size: 20px;
+}
+
+section p {
+    font-size: 16px;
+}
+
+
+/* Estilos de la barra lateral */
+
+.barra-lateral {
+    width: 280px;
+    background-color: #FFFDF9;
+    padding: 28px;
+    border: 1px solid #D8C3A5;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.barra-lateral h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: #4A3428;
+    font-size: 24px;
+}
+
+.barra-lateral h2::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #D8C3A5;
+    margin-top: 12px;
+}
+
+.barra-lateral p {
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.barra-lateral ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.barra-lateral li {
+    margin-bottom: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #D8C3A5;
+}
+
+.barra-lateral h3 {
+    color: #66735C;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Imagen de productos de la barra lateral */
+.imagen-productos {
+    display: block;
+    width: 130%;
+    height: auto;
+    margin: 15px 0 0 -15%;
+    border-radius: 8px;
+    border: 1px solid #D8C3A5;
+}
+
+/* Estilos de las imágenes */
+
+section img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 1px solid #D8C3A5;
+    object-fit: cover;
+}
+
+section#nosotros img {
+    width: 650px;
+    height: 400px;
+}
+
+section#menu img {
+    width: 380px;
+    height: 300px;
+}
+
+
+/* Estilos para las listas del menú */
+
+#menu ul {
+    background-color: #F5EFE6;
+    padding: 20px 35px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #E2D2BD;
+}
+
+#menu li {
+    margin-bottom: 8px;
+}
+
+
+/* Estilos del formulario de contacto */
+
+form {
+    background-color: #FFFDF9;
+    padding: 25px;
+    border: 1px solid #D8C3A5;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #4A3428;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #D8C3A5;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+form button {
+    background-color: #4A3428;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #66735C;
+}
+
+
+/* Estilos del pie de página */
+
+footer {
+    background-color: #4A3428;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
